@@ -26,14 +26,13 @@ export const getTransactions = async (req, res) => {
 
     // Handle month filter
     if (month) {
-      const monthNumber = new Date(`${month} 1, 2000`).getMonth() + 1; // Convert month name to month number
+      const monthNumber = new Date(`${month} 1, 2000`).getMonth() + 1;
 
       filter.$expr = {
         $eq: [{ $month: "$dateOfSale" }, monthNumber],
       };
     }
 
-    // Fetch the product transactions based on the filter, pagination, and search
     const transactions = await Product.find(filter)
       .skip(skip)
       .limit(limit)

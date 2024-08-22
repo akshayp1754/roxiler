@@ -57,7 +57,6 @@ export const getBarChart = async (req, res, isInternalCall = false) => {
       },
     ]);
 
-    console.log(barChartData);
     if (isInternalCall) return barChartData;
     res.json(barChartData);
     

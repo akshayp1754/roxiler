@@ -58,7 +58,9 @@ const TransactionsTable = () => {
             <td className="px-6 py-4 truncate-title font-medium text-gray-900 truncate">
               {transaction.title}
             </td>
-            <td className="px-6 py-4 truncate-description mb-3">{transaction.description}</td>
+            <td className="px-6 py-4 truncate-description mb-3">
+              {transaction.description}
+            </td>
             <td className="px-6 py-4">${transaction.price}</td>
             <td className="px-6 py-4">{transaction.category}</td>
             <td className="px-6 py-4">{transaction.sold ? "Yes" : "No"}</td>

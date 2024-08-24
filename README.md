@@ -15,7 +15,7 @@ Pie Chart Visualization: Visualizes the distribution of sales across different c
 
 Installation
 
-Clone the repository: git clone https://github.com/your-username/transactions-dashboard.git
+Clone the repository: git clone https://github.com/akshayp1754/roxiler.git
 
 Navigate to the project directory: cd roxiler
 
